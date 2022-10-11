@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Beginning</string>
+    <string name="title">Beginning of an End</string>
+    <string name="email">Email</string>
+    <string name="password">Senha</string>
+    <string name="cadastro_hint">Ainda não possui uma conta ?</string>
+    <string name="clique_aqui">Clique aqui</string>
+    <string name="entrar">Entrar</string>
+    <string name="nome">Nome</string>
+    <string name="sobrenome">Sobrenome</string>
+    <string name="idade">Idade</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="profiles">Perfis Cadastrados</string>
+    <string name="profile">PERFIL</string>
+</resources>
