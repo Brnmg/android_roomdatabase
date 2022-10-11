@@ -1,59 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/card_view_bg"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    tools:showIn="@layout/activity_profile">
+    tools:showIn="@layout/activity_profile"
+    app:cardBackgroundColor="@color/lightgrey">
 
-    <TextView
-        android:id="@+id/email"
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="10dp">
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp">
 
-    </TextView>
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:text="email">
+        </TextView>
 
-    <TextView
-        android:id="@+id/senha"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="10dp">
+        <TextView
+            android:id="@+id/senha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="senha"
+            android:layout_marginStart="10dp"
+            android:layout_below="@id/email">
+        </TextView>
 
-    </TextView>
+        <TextView
+            android:id="@+id/nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="nome"
+            android:layout_marginStart="10dp"
+            android:layout_below="@id/senha">
+        </TextView>
 
-    <TextView
-        android:id="@+id/nome"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="10dp">
+        <TextView
+            android:id="@+id/sobrenome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="sobrenome"
+            android:layout_marginStart="10dp"
+            android:layout_below="@id/nome">
+        </TextView>
 
-    </TextView>
-
-    <TextView
-        android:id="@+id/sobrenome"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="10dp">
-
-    </TextView>
-
-    <TextView
-        android:id="@+id/idade"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="10dp">
-
-    </TextView>
-
-</LinearLayout>
+        <TextView
+            android:id="@+id/idade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="idade"
+            android:layout_marginStart="10dp"
+            android:layout_below="@id/sobrenome">
+        </TextView>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

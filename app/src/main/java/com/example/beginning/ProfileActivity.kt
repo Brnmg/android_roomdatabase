@@ -4,13 +4,17 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import br.com.fiap.begginng.UserAdapter
 import com.example.beginning.database.AppDatabase
 
 class ProfileActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
+        load()
+    }
+
+    override fun onResume() {
+        super.onResume()
         load()
     }
 
@@ -21,6 +25,4 @@ class ProfileActivity : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = UserAdapter(list)
     }
-
-
 }
