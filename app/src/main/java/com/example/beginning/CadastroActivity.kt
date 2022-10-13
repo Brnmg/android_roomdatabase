@@ -53,19 +53,14 @@ class CadastroActivity : AppCompatActivity() {
                 db.userDao().insert(User(0, nome, sobrenome, email, senha, idade))
                 Toast.makeText(this, "Cadastro realizado com sucesso!", Toast.LENGTH_LONG).show()
 
-                //Limpa o formulário
-                binding.email.editText?.setText("")
-                binding.senha.editText?.setText("")
-                binding.nome.editText?.setText("")
-                binding.sobrenome.editText?.setText("")
-                binding.idade.editText?.setText("")
+                val intent = Intent(this, MenuActiviy::class.java)
+                startActivity(intent)
             }
         }
 
-        val buttonPerfis = findViewById<Button>(R.id.profiles)
-        buttonPerfis.setOnClickListener{
-            val intent = Intent(this, ProfileActivity::class.java)
-            startActivity(intent)
+        binding.delete.setOnClickListener{
+            db.userDao().delete(User(idUser, "", "", "", "", ""))
+            super.finish()
         }
     }
 }
