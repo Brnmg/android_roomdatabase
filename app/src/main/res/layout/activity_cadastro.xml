@@ -102,11 +102,11 @@
         android:text="@string/cadastrar" />
 
     <Button
-        android:id="@+id/profiles"
+        android:id="@+id/delete"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:layout_gravity="center"
-        android:text="@string/profiles" />
+        android:text="@string/delete" />
 
 </LinearLayout>

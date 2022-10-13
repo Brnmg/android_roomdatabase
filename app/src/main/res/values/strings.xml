@@ -1,15 +1,19 @@
 <resources>
     <string name="app_name">Beginning</string>
     <string name="title">Beginning of an End</string>
+    <string name="menu">Menu</string>
     <string name="email">Email</string>
     <string name="password">Senha</string>
     <string name="cadastro_hint">Ainda não possui uma conta ?</string>
     <string name="clique_aqui">Clique aqui</string>
     <string name="entrar">Entrar</string>
+    <string name="sobre">Sobre</string>
     <string name="nome">Nome</string>
     <string name="sobrenome">Sobrenome</string>
     <string name="idade">Idade</string>
     <string name="cadastrar">Cadastrar</string>
     <string name="profiles">Perfis Cadastrados</string>
     <string name="profile">PERFIL</string>
+    <string name="delete">EXCLUIR</string>
+    <string name="infos">O nosso jogo se passa em uma sociedade cyberpunk, onde o governo controla a educação e os pesoamentos das massas. Jogue como Lilith, uma garota criada fora do sistema que busca nada além de seu fim e vingança pela morte de seus pais.</string>
 </resources>
